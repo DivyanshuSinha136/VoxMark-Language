@@ -1,0 +1,14 @@
+### Callout
+
+A highlighted callout / tip box with a leading emoji icon.
+
+```
+::callout[💡]{**Pro Tip:** You can use `::var[name]{value}` to define
+reusable values and reference them with `@name`.}
+
+::callout[⚠]{Be careful when nesting more than 3 levels of widgets.}
+::callout[🔗]{Check the [full docs](https://github.com/DivyanshuSinha136).}
+```
+
+- **`[arg0]`** — emoji or short icon (default: `💡`)
+- **`{body}`** — callout content, Markdown-rendered

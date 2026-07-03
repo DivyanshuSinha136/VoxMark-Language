@@ -1,0 +1,16 @@
+### Tabs
+
+A tabbed panel. Tab labels go in `[args]`, tab content segments in `{body}` separated by `||`.
+
+```
+::tab[Python|JavaScript|Rust]{
+Python
+||
+JS
+||
+Rust
+}
+```
+
+- **`[arg0|arg1|…]`** — tab labels (must match number of `||` segments in body)
+- **`{seg0||seg1||…}`** — one content segment per tab, Markdown-rendered

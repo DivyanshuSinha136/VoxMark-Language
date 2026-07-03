@@ -1,0 +1,15 @@
+### Timeline
+
+A vertical event timeline. Each item is `Title::Description`, separated by `||`.
+
+```
+::timeline{
+  Project Kickoff::Started VoxMark as a production-grade document engine.
+  ||v1.0 Released::Shipped Markdown + 26 VML widgets with live preview.
+  ||v2.0::Added sidebar, router, footer, includes, class system, and forms.
+  ||You Are Here::Explore, edit, and create!
+}
+```
+
+- **`{body}`** — each segment is `Title::Description` (separated by `||`)
+- The `::` inside body text is the field separator between title and description; it does *not* trigger a widget parse

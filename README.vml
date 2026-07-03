@@ -1,0 +1,165 @@
+# <center>::b[shadow]{VML — VoxMark Language}</center>
+
+**VML** (`VoxMark Language`) is a declarative programming language for building interactive web applications and documents. It combines component-based UI, data binding, conditional rendering, scoped styling, reusable object definitions, routing, and compilation to HTML, CSS, and WebAssembly through the VoxMark compiler.
+
+::divider[gradient]
+
+## Table of Contents
+
+| Topics | Description |
+| ------ | ----------- |
+| [Syntax Basics](#syntax-basics) | Basic syntax for writing `VML` |
+| [Variables](#variables) | Define a reusable text value once and reference it anywhere with `@name`. |
+| [Classes](#classes---and-nameprop) | Define an object-style namespace of named properties and reference them with dot notation throughout the document. | 
+| :::fold[Content Widgets]{
+| Topics | Description | 
+| ------ | ----------- |
+| Card | A rounded content card with an optional title bar. | 
+| Alert | A status alert box. Four built-in styles. |
+| Callout | A highlighted callout / tip box with a leading emoji icon. |
+| Tabs | A tabbed panel. Tab labels go in `[args]`, tab content segments in `{body}`. |
+| Timeline | A vertical event timeline. Each item is `Title::Description`. | 
+| Progress Bar | An animated progress bar with an optional label. |
+| Badge | An inline pill badge. | 
+| Collapsible | A `<details> / <summary>` collapsible section. Uses triple-colon (`:::`). |
+|Tooltip | An inline element with a hover tooltip. | } | -- | 
+| :::fold[Layout Widgets]{
+| Topics | Description | 
+| ------ | ----------- |
+| Columns | A responsive multi-column layout. | 
+| Grid | A CSS grid container. Uses triple-colon. |
+| Flex | A CSS flex container. Uses triple-colon. |
+| Hero | A full-width hero section with configurable background and alignment. Uses triple-colon. |
+| Section | A full-width content section with optional title and subtitle. Uses triple-colon. | 
+| Box | A styled container box with configurable variant. Uses triple-colon. |
+| Div | A generic `<div>` wrapper with custom class, id, or style. Uses triple-colon. | 
+| Center / Right | Align block content. |
+| Spacer / Divider | Add whitespace or a horizontal rule. | } | -- | 
+| :::fold[Typography Widgets]{
+| Topics | Description | 
+| ------ | ----------- |
+| Highlight | Highlighted / marked text with colour variants. | 
+| Styled Bold | Bold text with special rendering styles. |
+| Color | Inline text with a custom colour. |
+| Glow | -- |
+| Keyboard Key | -- | 
+| Math | -- | } | -- |
+| :::fold[Navigation Widgets]{
+| Topics | Description | 
+| ------ | ----------- |
+| Sidebar | -- | 
+| Router | -- |
+| Footer | -- | } | -- |
+| :::fold[Media & Embed Widgets]{
+| Topics | Description | 
+| ------ | ----------- |
+| Icon | -- | 
+| Icon Card | -- |
+| Inline SVG | -- |
+| Embed | -- | } | -- |
+| :::fold[Form Widgets]{
+| Topics | Description | 
+| ------ | ----------- |
+| Input | -- | 
+| Checkbox | -- |
+| Select | -- |
+| Button | -- |
+| Button Group | -- | } | -- |
+| :::fold[Control Flow Widgets]{
+| Topics | Description | 
+| ------ | ----------- |
+| If | -- | 
+| Else | -- |
+| If / Else (inline) | -- | } | -- |
+| :::fold[CSS Widgets]{
+| Topics | Description | 
+| ------ | ----------- |
+| Scoped CSS Block | -- | 
+| CSS Playground | -- |
+| CSS Variable | -- |
+| Inline Style | -- |
+| CSS Class | -- | } | -- |
+| :::fold[Data Visualisation]{
+| Topics | Description | 
+| ------ | ----------- |
+| Chart | -- | 
+| Graph | -- |
+| Graph Playground | -- | } | -- |
+| :::fold[Charting]{
+| Topics | Description | 
+| ------ | ----------- |
+| Demo Sandbox | -- | } | -- |
+| :::fold[Build-time Widgets]{
+| Topics | Description | 
+| ------ | ----------- |
+| [Include](#include) | Read another `.vml` file from disk and inline its fully-rendered output here. |  } | -- |
+| [CLI Reference](#cli-reference) | -- |
+| [Quick-reference Table](#quick-reference-table) | -- |
+
+::divider[gradient]
+
+::include[./sections/basic-syntax.vml]
+
+::divider[gradient]
+
+::include[./sections/variables.vml]
+
+::divider[gradient]
+
+::include[./sections/classes.vml]
+
+::divider[gradient]
+
+## Content Widgets
+
+::include[./sections/card.vml]
+
+::divider
+
+::include[./sections/alert.vml]
+
+::divider
+
+::include[./sections/callout.vml]
+
+::divider
+
+::include[./sections/tabs.vml]
+
+::divider
+
+::include[./sections/timeline.vml]
+
+::divider
+
+::include[./sections/progress-bar.vml]
+
+::divider
+
+::include[./sections/badge.vml]
+
+::divider
+
+::include[./sections/collapsible-fold.vml]
+
+::divider
+
+::divider[gradient]
+
+::footer[© 2026 Divyanshu Sinha|#7c6dff]{
+  **VoxMark**
+  <br>
+  VML (::b[gradient]{VoxMark Language}) - A declarative programming language.
+  <br>
+  ::badge[Open Source|#22c55e]
+  ||
+  **Navigation**
+  <br>
+  [Home](#home) · [About](#ltcentergtvml--voxmark-languageltcentergt) · [Projects](#projects)
+  ||
+  **Connect**
+  <br>
+  ::icon[github|1em|#7c6dff]{} [GitHub](https://github.com/DivyanshuSinha136)
+  <br>
+  ::icon[mail|1em|#38d9a9]{} [Email](mailto:you@example.com)
+}

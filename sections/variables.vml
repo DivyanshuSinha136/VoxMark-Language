@@ -1,0 +1,17 @@
+## Variables — `::var`
+
+Define a reusable text value once and reference it anywhere with `@name`.
+
+```
+::var[author]{Divyanshu Sinha}
+::var[version]{2.0.0}
+::var[repo]{https://github.com/DivyanshuSinha136}
+
+Built by **@author** — VoxMark v@version.
+[Source code](@repo)
+```
+
+- Variable names are case-sensitive identifiers.
+- Values can contain any text including spaces and special characters.
+- Re-defining a variable replaces its previous value.
+- `@name` references are resolved after all widget rendering, so a variable defined anywhere in the document is available everywhere.

@@ -1,0 +1,13 @@
+### Progress Bar
+
+An animated progress bar with an optional label.
+
+```
+::progress[72/100|Project Completion]
+::progress[3/5|Milestones]
+::progress[1/1|Tests Passing]
+```
+
+- **`[value/max|label]`** — current value, maximum value, and display label
+- Bodyless — no `{...}` required
+- Percentage is computed as `(value / max) × 100`

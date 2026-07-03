@@ -1,0 +1,72 @@
+## Syntax Basics
+
+```
+::cmd[args]{body}       ← double colon  — most widgets
+:::cmd[args]{body}      ← triple colon  — block/layout/structural widgets
+```
+
+| Part | Required | Description |
+|------|----------|-------------|
+| `::` or `:::` | yes | Widget opener. Triple-colon widgets are typically block-level layout containers. |
+| `cmd` | yes | The widget name (case-insensitive). |
+| `[args]` | depends | Pipe-separated arguments: `[arg1\|arg2\|arg3]`. Some widgets require them, some don't. |
+| `{body}` | depends | Body content. Supports **Markdown**, nested `::widgets`, and `@var` references. Omit for bodyless widgets. |
+
+### Argument separator: `|`
+
+Multiple arguments inside `[...]` are separated by `|`:
+
+```
+::button[primary|https://example.com]{Visit}
+::icon[github|1.2em|#7c6dff]{🐙}
+::badge[stable|#22c55e]
+```
+
+### Body segment separator: `||`
+
+Some widgets accept multiple body *segments* separated by `||` — for example, tabs (one segment per tab panel), columns (one segment per column), and the router (one segment per page):
+
+```
+::tab[Python|Rust]{
+python
+||
+rust
+}
+
+```
+
+### Bodyless widgets
+
+Some widgets take only `[args]` and no `{body}`. These never have curly braces:
+
+```
+::badge[v1.0|#7c6dff]
+::progress[72/100|Completion]
+::divider[]
+::spacer[2em]
+```
+
+### Nesting
+
+VML widgets nest freely inside any `{body}`:
+
+```
+::card[Example]{
+  Status: ::badge[OK|#22c55e]
+  Press ::kbd{Ctrl+S} to save.
+  ::alert[info]{Nested alert inside a card body.}
+}
+```
+
+### Markdown inside bodies
+
+Widget bodies are fully Markdown-aware. Any Markdown that Mistune supports (CommonMark + GFM) works inside a body:
+
+```
+::callout[💡]{
+**Bold**, *italic*, `inline code`, [links](https://example.com),
+and even fenced code blocks all work here.
+}
+```
+
+> **Exception:** the body of `::var`, `:::css`, `:::cssplay`, `::math`, `::kbd`, `::chart`, `::embed`, `::svg`, `:::demo`, `::if`, `::else`, `::ifelse`, `::router`, `::footer`, `::input`, `::checkbox`, `::select`, and `::cssvar` is treated as *raw text* (not Markdown) because those widgets need their body content unmodified.
