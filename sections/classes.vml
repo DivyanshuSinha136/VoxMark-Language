@@ -26,7 +26,7 @@ Principal: @School.principal — [Website](@School.website)
 | ClassName | Convention: start with a capital letter. `re.sub(r'[^\w]', '', name)` for safety. |
 | Unknown ref | `@School.unknown` is left unchanged — safe to use conditionally |
 | Re-definition | Replaces all properties of that class |
-| Visibility | Emits an invisible `<meta class="vml-class-def">` tag — no visible output |
+| Visibility | Emits an invisible <`meta class="vml-class-def"`> tag — no visible output |
 
 ### Dot-ref vs plain-var
 
@@ -36,3 +36,17 @@ Principal: @School.principal — [Website](@School.website)
 | `@author` | Simple var (no dot — resolved after class refs) |
 
 Class properties work inside any widget body, argument, or plain text.
+
+#### Preview
+
+::class_def[School]{
+  name:Springfield Elementary
+  ||address:742 Evergreen Terrace, Springfield
+  ||founded:1953
+  ||principal:Principal Skinner
+  ||website:https://springfield-elem.edu
+}
+
+The school is **@School.name**, founded in @School.founded.
+Address: @School.address
+Principal: @School.principal — [Website](@School.website)

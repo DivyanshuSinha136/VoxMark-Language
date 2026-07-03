@@ -1,0 +1,26 @@
+### Hero
+
+A full-width hero section with configurable background and alignment. Uses triple-colon.
+
+```
+:::hero[#13162a|center|400px]{
+# Welcome to VoxMark
+
+The document engine built from **first principles**.
+
+:::btngroup{::button[outline|#]{Get Started}||::button[ghost|#]{Learn More}}
+}
+```
+
+- **`[bg-colour|text-align|min-height]`** — background colour, `left`/`center`/`right`, minimum height
+- **`{body}`** — hero content, Markdown + VML rendered
+
+#### Preview
+
+:::hero[#13162a|center|400px]{
+# Welcome to VoxMark
+
+The document engine built from **first principles**.
+
+:::btngroup{::button[outline|#]{Get Started}||::button[ghost|#]{Learn More}}
+}

@@ -1,0 +1,17 @@
+### Div
+
+A generic `div` wrapper with custom class, id, or style. Uses triple-colon.
+
+```
+:::div[my-custom-class|my-id|color:red;font-size:1.2em]{
+Content with custom styling applied.
+}
+```
+
+- **`[class|id|style]`** — all optional, pipe-separated
+
+#### Preview
+
+:::div[my-custom-class|my-id|color:red;font-size:1.2em]{
+Content with custom styling applied.
+}

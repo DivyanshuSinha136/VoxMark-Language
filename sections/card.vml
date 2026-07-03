@@ -1,4 +1,4 @@
-### Card
+### Card 
 
 A rounded content card with an optional title bar.
 
@@ -13,5 +13,22 @@ Body content here. Supports **Markdown**, ::badge[tags|#7c6dff], and nested widg
 
 ```
 ::card[]{No title — just body content.}
-::card[With Icon ::icon[rocket|.9em|#f59e0b]{}]{Body text}
+::card[Title]{Body text}
 ```
+
+#### Preview
+
+::columns[1:1]{
+Source Code ::icon[code]{}
+
+```
+::card[]{No title — just body content.}
+::card[Title]{Body text}
+```
+||
+View ::icon[eye]{}
+
+::card[]{No title — just body content.}
+::card[Title]{Body text}
+
+}

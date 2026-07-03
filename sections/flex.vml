@@ -1,0 +1,26 @@
+### Flex
+
+A CSS flex container. Uses triple-colon.
+
+```
+:::flex[12px|center|flex-start|wrap]{
+::badge[Python|#3b82f6]
+||
+::badge[NASM|#f59e0b]
+||
+::badge[Flask|#22c55e]
+}
+```
+
+- **`[gap|align-items|justify-content|flex-wrap]`** — all optional, pipe-separated
+- **`{item0||item1||…}`** — flex items
+
+#### Preview
+
+:::flex[12px|center|flex-start|wrap]{
+::badge[Python|#3b82f6]
+||
+::badge[NASM|#f59e0b]
+||
+::badge[Flask|#22c55e]
+}

@@ -1,0 +1,15 @@
+### Box
+
+A styled container box with configurable variant. Uses triple-colon.
+
+```
+:::box[info]{
+This is an info box. Useful for highlighting important content.
+}
+```
+
+#### Preview
+
+:::box[info]{
+This is an info box. Useful for highlighting important content.
+}

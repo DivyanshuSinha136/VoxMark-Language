@@ -11,3 +11,27 @@ A status alert box. Four built-in styles.
 
 - **`[arg0]`** — style: `success` · `info` · `warn` · `error`
 - **`{body}`** — alert message, Markdown-rendered
+
+#### Preview
+
+::columns[1:1]{
+Source Code ::icon[code]{}
+```
+::alert[success]{Your document saved successfully.}
+::alert[info]{This is an informational note.}
+::alert[warn]{Something needs your attention.}
+::alert[error]{An error occurred. Check the logs.}
+
+```
+
+||
+
+View ::icon[eye]{}
+
+::alert[success]{Your document saved successfully.}
+::alert[info]{This is an informational note.}
+::alert[warn]{Something needs your attention.}
+::alert[error]{An error occurred. Check the logs.}
+
+
+}

@@ -12,3 +12,10 @@ Platform: ::badge[Python 3.12|#3b82f6]
 - **`[label|colour]`** — label text and background hex colour
 - Bodyless — no `{...}` required
 - Inline element — can appear mid-sentence
+
+#### Preview
+
+Status: ::badge[stable|#22c55e]
+Version: ::badge[v2.0|#7c6dff]
+License: ::badge[MIT|#f59e0b]
+Platform: ::badge[Python 3.12|#3b82f6]

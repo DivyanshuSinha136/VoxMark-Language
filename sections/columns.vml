@@ -1,0 +1,46 @@
+### Columns
+
+A responsive multi-column layout. Columns use `||` to separate content.
+
+```
+::columns[1:1]{
+**Left column**
+
+Full Markdown here — lists, code, widgets, anything.
+||
+**Right column**
+
+::alert[info]{Even nested widgets.}
+}
+```
+
+- **`[ratio]`** — colon-separated flex ratios, e.g. `1:1`, `2:1`, `1:1:1`, `3:1`
+- **`{col0||col1||…}`** — one segment per column
+- Wraps on mobile automatically
+
+```
+::columns[2:1]{
+Main content (takes 2/3 width)
+||
+Sidebar content (takes 1/3 width)
+}
+```
+
+#### Preview
+
+::columns[1:1]{
+**Left column**
+
+Full Markdown here — lists, code, widgets, anything.
+||
+**Right column**
+
+::alert[info]{Even nested widgets.}
+}
+
+
+::columns[2:1]{
+Main content (takes 2/3 width)
+||
+Sidebar content (takes 1/3 width)
+}

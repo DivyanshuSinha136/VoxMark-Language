@@ -1,0 +1,26 @@
+### Grid
+
+A CSS grid container. Uses triple-colon.
+
+```
+:::grid[3|16px]{
+::card[Card 1]{Content}
+||
+::card[Card 2]{Content}
+||
+::card[Card 3]{Content}
+}
+```
+
+- **`[cols|gap]`** — number of columns (or CSS `grid-template-columns` value) and gap size
+- **`{cell0||cell1||…}`** — one segment per cell
+
+#### Preview
+
+:::grid[3|16px]{
+::card[Card 1]{Content}
+||
+::card[Card 2]{Content}
+||
+::card[Card 3]{Content}
+}

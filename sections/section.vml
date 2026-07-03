@@ -1,0 +1,29 @@
+### Section
+
+A full-width content section with optional title and subtitle. Uses triple-colon.
+
+```
+:::section[Features|Everything you need|center]{
+::columns[1:1:1]{
+::card[Fast]{Sub-millisecond rendering.}
+||
+::card[Secure]{XSS scanning built in.}
+||
+::card[Extensible]{53+ widget types.}
+}
+}
+```
+
+- **`[title|subtitle|align]`** — all optional
+
+#### Preview
+
+:::section[Features|Everything you need|center]{
+::columns[1:1:1]{
+::card[Fast]{Sub-millisecond rendering.}
+||
+::card[Secure]{XSS scanning built in.}
+||
+::card[Extensible]{53+ widget types.}
+}
+}

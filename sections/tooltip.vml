@@ -1,0 +1,16 @@
+### Tooltip
+
+An inline element with a hover tooltip.
+
+```
+VoxMark uses ::tooltip[LEB128|Unsigned Little-Endian Base-128 variable-length encoding]{LEB128}
+encoding in its WASM binary output.
+```
+
+- **`[tip]`** — tooltip text shown on hover
+- **`{body}`** — the visible anchor text
+
+#### Preview
+
+VoxMark uses ::tooltip[LEB128|Unsigned Little-Endian Base-128 variable-length encoding]{LEB128}
+encoding in its WASM binary output.

@@ -1,0 +1,36 @@
+### Sidebar
+
+A slide-in navigation sidebar with a floating toggle button. Uses triple-colon.
+
+```
+:::sidebar[My Portfolio|left|260px]{
+  Site Name
+  ||Home::#home
+  ||About::#about
+  ||Projects::#projects
+  ||---
+  ||Contact::#contact
+  ||::badge[v2.0|#7c6dff]
+}
+```
+
+**Arguments** (`[Title|side|width]`):
+
+| Arg | Default | Description |
+|-----|---------|-------------|
+| Title | `Menu` | Shown in the sidebar header |
+| side | `left` | `left` or `right` |
+| width | `260px` | CSS width of the sidebar panel |
+
+**Body segment formats** (separated by `||`):
+
+| Pattern | Renders as |
+|---------|-----------|
+| `Label::href` | Nav link — `<a class="vml-sidebar-link">` |
+| `---` | Horizontal divider |
+| Plain text | Section heading |
+| `::widget{...}` | Raw widget block inside the sidebar |
+
+- Clicking the overlay or pressing `Escape` closes the sidebar
+- Multiple sidebars on one page are independent (each has a unique UID)
+- The `☰` toggle button is position-fixed at `top:16px` on the chosen edge

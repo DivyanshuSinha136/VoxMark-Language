@@ -22,3 +22,21 @@ Everything works inside a fold:
 
 - **`[arg0]`** — summary / trigger label
 - **`{body}`** — hidden content, fully Markdown + VML rendered
+
+#### Preview
+
+:::fold[Click to expand — Advanced Options]{
+### Variable System
+
+Define once, use everywhere:
+```
+::var[author]{Divyanshu Sinha}
+```
+
+### Nested Widgets
+
+Everything works inside a fold:
+
+::alert[info]{Even alerts.}
+::progress[80/100|Even progress bars.]
+}
