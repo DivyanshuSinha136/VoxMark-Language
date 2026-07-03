@@ -1,4 +1,4 @@
-[VML](https://github.com/DivyanshuSinha136/VoxMark-Language/blob/main/VoxMark%20Language%20-%20(VML).png)
+![VML](https://github.com/DivyanshuSinha136/VoxMark-Language/blob/main/VoxMark%20Language%20-%20(VML).png)
 
 # VML — VoxMark Language
 
