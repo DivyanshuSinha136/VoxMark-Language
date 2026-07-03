@@ -495,4 +495,4 @@ VoxMark Language (VML) — created and maintained by **Divyanshu Sinha** ([@Divy
 
 ---
 
-![Try Now VoxMark Language (`VML`)](https://divyanshusinha136.github.io/VoxMark-Language/).
+[Try Now VoxMark Language (`VML`)](https://divyanshusinha136.github.io/VoxMark-Language/).
